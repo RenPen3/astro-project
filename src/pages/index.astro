@@ -1,0 +1,35 @@
+---
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import "bootstrap/dist/css/bootstrap.css";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<!-- <Layout>
+	<Welcome />
+</Layout> --><!-- Welcome to Astro! Everything between
+these triple-dash code fences // is your "component frontmatter". It never runs
+in the browser. console.log('This runs in your terminal, not the browser!');  --><!-- Below is your "component template." It's just HTML, but with
+    some magic sprinkled in to help you build great templates. -->
+<html>
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-light text-dark d-flex justify-content-between"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
+<style></style>
