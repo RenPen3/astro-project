@@ -1,60 +1,44 @@
 ---
 import logo1 from "/src/assets/logo1.svg";
+// src={logo1.src}
 ---
 
-<nav class="navbar navbar-expand-md bg-light text-dark">
-  <div class="container">
-    <div class="collapse navbar-collapse d-flex justify-content-center gap-4">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            href="#">Services</a
+<nav class="bg-slate-300 text-dark p-3 mb-5">
+  <div class="container-sm md:container flex justify-center items-center">
+    <div class="text-lg flex justify-between items-center gap-5">
+      <ul class="flex p-0 my-0 mr-5 gap-5">
+        <li>
+          <a class="hover:text-black no-underline text-gray-700" href="#"
+            >About</a
           >
-          <ul class="dropdown-menu p-0">
-            <li class="p-2">
-              <a class="dropdown-item" href="#">Service 1</a>
-            </li>
-            <li class="p-2">
-              <a class="dropdown-item" href="#">Service 2</a>
-            </li>
-            <li class="p-2">
-              <a class="dropdown-item" href="#">Service 3</a>
-            </li>
-          </ul>
+        </li>
+        <li>
+          <a class="hover:text-black no-underline text-gray-700" href="#"
+            >Services</a
+          >
         </li>
       </ul>
-      <div>
-        <a class="navbar-brand m-0" href="#">
-          <img src={logo1.src} width="40px" height="40px" alt="A Logo" />
-        </a>
-      </div>
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            href="#">Products</a
+    </div>
+    <a class="p-0 px-5" href="#">
+      <img
+        src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+        width="50"
+        height="50"
+        alt="A Logo"
+      />
+    </a>
+    <div class="text-lg flex justify-between items-center">
+      <ul class="flex p-0 my-0 ml-5 gap-5">
+        <li>
+          <a class="hover:text-black no-underline text-gray-700" href="#"
+            >Products</a
           >
-          <ul class="dropdown-menu p-0">
-            <li class="p-2">
-              <a class="dropdown-item" href="#">Product 1</a>
-            </li>
-            <li class="p-2">
-              <a class="dropdown-item" href="#">Product 2</a>
-            </li>
-            <li class="p-2">
-              <a class="dropdown-item" href="#">Product 3</a>
-            </li>
-          </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li>
+          <a class="hover:text-black no-underline text-gray-700" href="#"
+            >Contact</a
+          >
+        </li>
       </ul>
     </div>
   </div>
