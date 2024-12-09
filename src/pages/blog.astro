@@ -2,13 +2,15 @@
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import BlogLayout from "../layouts/BlogLayout.astro";
+import Posts from "../pages/posts/1.md";
 import Hero1 from "../components/Hero1/Hero1.astro";
+import Hero2 from "../components/Hero2/Hero2.astro";
 import Header1 from "../components/Header1/Header1.astro";
 import Header2 from "../components/Header2/Header2.astro";
 import Header3 from "../components/Header3/Header3.astro";
 import Footer1 from "../components/Footer1/Footer1.astro";
 import "bootstrap/dist/css/bootstrap.css";
-import "../components/Header1/Header1.css";
+// import "../components/Header1/Header1.css";
 import "../components/Header2/Header2.css";
 import "../components/Hero1/Hero1.css";
 
@@ -16,13 +18,18 @@ import "../components/Hero1/Hero1.css";
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-  <!-- <Welcome /> --><!-- <Header1 /> --><!-- <Header2 /> -->
+<!-- <Layout>
   <Header3 />
   <Hero1 />
   <Footer1 />
-  <BlogLayout />
-</Layout>
+</Layout> -->
+<>
+  <Header3 />
+  <Hero2 />
+  <!-- <BlogLayout /> -->
+  <!-- <Posts /> -->
+  <Footer1 />
+</>
 
 <!-- Welcome to Astro! Everything between
 these triple-dash code fences // is your "component frontmatter". It never runs
