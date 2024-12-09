@@ -1,0 +1,47 @@
+---
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import BlogLayout from "../layouts/BlogLayout.astro";
+import AboutPage from "../layouts/AboutLayout.astro";
+import Layout404 from "../layouts/Layout404.astro";
+import Posts from "../pages/posts/1.md";
+import Hero1 from "../components/Hero1/Hero1.astro";
+import Hero2 from "../components/Hero2/Hero2.astro";
+import Hero3 from "../components/Hero3/Hero3.astro";
+import Page404 from "../components/Page404/Page404.astro";
+import Header1 from "../components/Header1/Header1.astro";
+import Header2 from "../components/Header2/Header2.astro";
+import Header3 from "../components/Header3/Header3.astro";
+import Footer1 from "../components/Footer1/Footer1.astro";
+import "bootstrap/dist/css/bootstrap.css";
+// import "../components/Header1/Header1.css";
+import "../components/Header2/Header2.css";
+import "../components/Hero1/Hero1.css";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<!-- <Layout>
+  <Header3 />
+  <Hero1 />
+  <Footer1 />
+</Layout> -->
+<Layout404>
+  <Page404 />
+
+  <!-- <Header3 /> -->
+  <!-- <Hero3 /> -->
+  <!-- <BlogLayout /> -->
+  <!-- <Posts /> -->
+  <!-- <Footer1 /> -->
+</Layout404>
+
+<!-- Welcome to Astro! Everything between
+these triple-dash code fences // is your "component frontmatter". It never runs
+in the browser. console.log('This runs in your terminal, not the browser!');  --><!-- Below is your "component template." It's just HTML, but with
+    some magic sprinkled in to help you build great templates. -->
+<!-- <html>
+  <body> </body>
+</html>
+<style></style> -->
