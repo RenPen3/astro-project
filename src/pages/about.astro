@@ -2,9 +2,11 @@
 import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import BlogLayout from "../layouts/BlogLayout.astro";
+import AboutPage from "../layouts/AboutLayout.astro";
 import Posts from "../pages/posts/1.md";
 import Hero1 from "../components/Hero1/Hero1.astro";
 import Hero2 from "../components/Hero2/Hero2.astro";
+import Hero3 from "../components/Hero3/Hero3.astro";
 import Header1 from "../components/Header1/Header1.astro";
 import Header2 from "../components/Header2/Header2.astro";
 import Header3 from "../components/Header3/Header3.astro";
@@ -23,11 +25,13 @@ import "../components/Hero1/Hero1.css";
   <Hero1 />
   <Footer1 />
 </Layout> -->
-<BlogLayout>
+<AboutPage>
   <Header3 />
-  <Hero2 />
+  <Hero3 />
+  <!-- <BlogLayout /> -->
+  <!-- <Posts /> -->
   <Footer1 />
-</BlogLayout>
+</AboutPage>
 
 <!-- Welcome to Astro! Everything between
 these triple-dash code fences // is your "component frontmatter". It never runs
