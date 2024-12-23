@@ -1,18 +1,18 @@
 ---
-import BlogLayout from "../layouts/BlogLayout.astro";
+import ServiceLayout from "../layouts/AboutLayout.astro";
 import Header3 from "../components/Header3/Header3.astro";
 import Footer1 from "../components/Footer1/Footer1.astro";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/global.css";
 ---
 
-<BlogLayout>
+<ServiceLayout>
   <Header3 />
 
   <section class="bg-slate-300 py-52">
     <div class="container">
       <div class="text-center border-spacing-2">
-        <h1 class="display-2">Blog Page</h1>
+        <h1 class="display-2">Service Page</h1>
         <p class="lead">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
@@ -26,7 +26,7 @@ import "../styles/global.css";
   <section class="bg-white m-5">
     <div class="container-sm">
       <div class="p-5">
-        <h3 class="mb-4 text-4xl">Blog</h3>
+        <h3 class="mb-4 text-4xl">Services</h3>
         <p class="lead">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, modi
           id voluptas sunt perferendis placeat neque omnis aperiam excepturi a.
@@ -41,4 +41,13 @@ import "../styles/global.css";
   </section>
 
   <Footer1 />
-</BlogLayout>
+</ServiceLayout>
+
+<!-- Welcome to Astro! Everything between
+these triple-dash code fences // is your "component frontmatter". It never runs
+in the browser. console.log('This runs in your terminal, not the browser!');  --><!-- Below is your "component template." It's just HTML, but with
+    some magic sprinkled in to help you build great templates. -->
+<!-- <html>
+  <body> </body>
+</html>
+<style></style> -->

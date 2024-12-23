@@ -1,26 +1,36 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
-import BlogLayout from "../layouts/BlogLayout.astro";
-import Hero1 from "../components/Hero1/Hero1.astro";
-import Header1 from "../components/Header1/Header1.astro";
-import Header2 from "../components/Header2/Header2.astro";
 import Header3 from "../components/Header3/Header3.astro";
 import Footer1 from "../components/Footer1/Footer1.astro";
 import "bootstrap/dist/css/bootstrap.css";
 import "../components/Header1/Header1.css";
 import "../components/Header2/Header2.css";
-import "../components/Hero1/Hero1.css";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
 
 <Layout>
   <Header3 />
-  <Hero1 />
+
+  <section class="bg-white hero">
+    <div class="container">
+      <div class="column-2 flex justify-between items-center">
+        <div class="w-50">
+          <h1 class="display-2">Title Goes Here 2</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button class="bg-slate-100 w-25 p-2 font-semibold hover:bg-slate-200"
+            >Start Now</button
+          >
+        </div>
+        <div class="w-50">
+          <img class="rounded-2" src="ps_img1.jpg" alt="Hero Image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <Footer1 />
-  <BlogLayout />
 </Layout>
 
 <!-- Welcome to Astro! Everything between
