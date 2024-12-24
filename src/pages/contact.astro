@@ -1,0 +1,38 @@
+---
+import AboutLayout from "../layouts/AboutLayout.astro";
+import Header3 from "../components/Header3/Header3.astro";
+import Footer1 from "../components/Footer1/Footer1.astro";
+import "bootstrap/dist/css/bootstrap.css";
+import "../styles/global.css";
+---
+
+<AboutLayout>
+  <Header3 />
+
+  <section class="bg-slate-300 py-52">
+    <div class="container">
+      <div class="text-center border-spacing-2">
+        <h1 class="display-2">Contact Page</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <!-- <button class="bg-slate-100 w-25 p-2 font-semibold hover:bg-slate-200"
+          >Start Now</button
+        > -->
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white m-5">
+    <div class="container-sm">
+      <div class="p-5">
+        <h3 class="mb-4 text-4xl">Contact</h3>
+        <form class="lead">
+          <input type="text" placeholder="Name" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <Footer1 />
+</AboutLayout>
