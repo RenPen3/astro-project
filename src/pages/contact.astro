@@ -1,12 +1,12 @@
 ---
-import AboutLayout from "../layouts/AboutLayout.astro";
-import Header3 from "../components/Header3/Header3.astro";
-import Footer1 from "../components/Footer1/Footer1.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import Header3 from "../components/Header3.astro";
+import Footer2 from "../components/Footer2.astro";
 import "bootstrap/dist/css/bootstrap.css";
-import "../styles/global.css";
+import "../styles/global.scss";
 ---
 
-<AboutLayout>
+<PageLayout>
   <Header3 />
 
   <section class="bg-slate-300 py-52">
@@ -34,5 +34,5 @@ import "../styles/global.css";
     </div>
   </section>
 
-  <Footer1 />
-</AboutLayout>
+  <Footer2 />
+</PageLayout>
