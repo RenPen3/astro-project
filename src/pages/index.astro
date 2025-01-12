@@ -1,31 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header3 from "../components/Header3/Header3.astro";
-import Footer1 from "../components/Footer1/Footer1.astro";
+import Hero1 from "../components/Hero1.astro";
+import Header3 from "../components/Header3.astro";
+import Footer2 from "../components/Footer2.astro";
 import "bootstrap/dist/css/bootstrap.css";
-import "../components/Header1/Header1.css";
-import "../components/Header2/Header2.css";
-import "../styles/global.css";
+import "../styles/global.scss";
 ---
-
-<style>
-  .hero {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
 
 <Layout>
   <Header3 />
-
-  <section class="bg-white hero">
+  <Hero1 />
+  <!-- <section class="bg-white hero">
     <div class="container container:md">
       <div class="column-2 flex justify-between items-center">
         <div class="w-50">
-          <h1 class="display-2">Title Goes Here 2</h1>
+          <h1 class="display-4">Title Goes Here 2</h1>
           <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
@@ -38,16 +27,6 @@ import "../styles/global.css";
         </div>
       </div>
     </div>
-  </section>
-
-  <Footer1 />
+  </section> -->
+  <Footer2 />
 </Layout>
-
-<!-- Welcome to Astro! Everything between
-these triple-dash code fences // is your "component frontmatter". It never runs
-in the browser. console.log('This runs in your terminal, not the browser!');  --><!-- Below is your "component template." It's just HTML, but with
-    some magic sprinkled in to help you build great templates. -->
-<!-- <html>
-  <body> </body>
-</html>
-<style></style> -->
