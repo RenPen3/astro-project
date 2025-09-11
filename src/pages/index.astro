@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header3 from "../components/Header3/Header3.astro";
 import Footer1 from "../components/Footer1/Footer1.astro";
+import Grid1 from "../components/Grid-1.astro";
 import "bootstrap/dist/css/bootstrap.css";
 import "../components/Header1/Header1.css";
 import "../components/Header2/Header2.css";
@@ -11,35 +12,37 @@ import "../styles/global.css";
 <style>
   .hero {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 14em 2em;
   }
 </style>
 
 <Layout>
-  <Header3 />
-
   <section class="bg-white hero">
     <div class="container container:md">
       <div class="column-2 flex justify-between items-center">
-        <div class="w-50">
-          <h1 class="display-2">Title Goes Here 2</h1>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+          <h1 class="font-black text-8xl">More Of My Work</h1>
+          <p class="lead w-2/3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard. Lorem
+            Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard.
           </p>
           <button class="bg-slate-100 w-25 p-2 font-semibold hover:bg-slate-200"
             >Start Now</button
           >
         </div>
-        <div class="w-50">
+        <!-- <div class="w-50">
           <img class="rounded-2" src="ps_img1.jpg" alt="Hero Image" />
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
-
+  <Header3 />
+  <Grid1 />
   <Footer1 />
 </Layout>
 
