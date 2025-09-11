@@ -1,30 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
-<<<<<<< HEAD
 import Hero1 from "../components/Hero1.astro";
 import Header3 from "../components/Header3.astro";
-import Footer2 from "../components/Footer2.astro";
-=======
-import Header3 from "../components/Header3/Header3.astro";
-import Footer1 from "../components/Footer1/Footer1.astro";
+import Footer1 from "../components/Footer1.astro";
 import Grid1 from "../components/Grid-1.astro";
->>>>>>> staging
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/global.scss";
 ---
 
-<<<<<<< HEAD
 <Layout>
-  <Header3 />
   <Hero1 />
-  <!-- <section class="bg-white hero">
+  <Header3 />
+  <Grid1 />
+  <Footer1 />
+</Layout>
+
+<!-- <section class="bg-white hero">
     <div class="container container:md">
       <div class="column-2 flex justify-between items-center">
         <div class="w-50">
           <h1 class="display-4">Title Goes Here 2</h1>
           <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-=======
 <style>
   .hero {
     width: 100%;
@@ -38,7 +35,7 @@ import "../styles/global.scss";
 <Layout>
   <section class="bg-white hero">
     <div class="container container:md">
-      <div class="column-2 flex justify-between items-center">
+      <Layout class="column-2 flex justify-between items-center">
         <div>
           <h1 class="font-black text-8xl">More Of My Work</h1>
           <p class="lead w-2/3">
@@ -46,7 +43,6 @@ import "../styles/global.scss";
             industry. Lorem Ipsum has been the industry's standard. Lorem
             Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard.
->>>>>>> staging
           </p>
           <button class="bg-slate-100 w-25 p-2 font-semibold hover:bg-slate-200"
             >Start Now</button
@@ -55,15 +51,3 @@ import "../styles/global.scss";
         <!-- <div class="w-50">
           <img class="rounded-2" src="ps_img1.jpg" alt="Hero Image" />
         </div> -->
-      </div>
-    </div>
-<<<<<<< HEAD
-  </section> -->
-  <Footer2 />
-=======
-  </section>
-  <Header3 />
-  <Grid1 />
-  <Footer1 />
->>>>>>> staging
-</Layout>
