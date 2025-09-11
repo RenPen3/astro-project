@@ -4,6 +4,7 @@ import Header3 from "../components/Header3.astro";
 import Footer2 from "../components/Footer2.astro";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/global.scss";
+const pageTitle = "Welcome to my about page!"
 ---
 
 <PageLayout>
@@ -12,7 +13,7 @@ import "../styles/global.scss";
   <section class="bg-slate-300 py-52 about">
     <div class="container">
       <div class="text-center border-spacing-2">
-        <h1 class="display-2 about-h1">About Page</h1>
+        <h1 class="display-2 about-h1">{pageTitle}</h1>
         <p class="lead about-p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
