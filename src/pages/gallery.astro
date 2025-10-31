@@ -1,16 +1,11 @@
 ---
-import PageLayout from "../layouts/PageLayout.astro";
-import Header3 from "../components/Header3.astro";
-import Footer2 from "../components/Footer2.astro";
+import Layout from "../layouts/Layout.astro";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/global.scss";
-const pageTitle = "Welcome to my gallery page!"
-
+const pageTitle = "Welcome to my gallery page!";
 ---
 
-<PageLayout>
-  <Header3 />
-
+<Layout>
   <section class="bg-slate-300 py-52">
     <div class="container">
       <div class="text-center border-spacing-2">
@@ -68,6 +63,4 @@ const pageTitle = "Welcome to my gallery page!"
       </div>
     </div>
   </section>
-
-  <Footer2 />
-</PageLayout>
+</Layout>
